@@ -1,13 +1,13 @@
 <?php
-namespace Aws\Rds;
+namespace RamseyAws\Rds;
 
-use Aws\Credentials\CredentialsInterface;
-use Aws\Credentials\Credentials;
-use Aws\Signature\SignatureV4;
+use RamseyAws\Credentials\CredentialsInterface;
+use RamseyAws\Credentials\Credentials;
+use RamseyAws\Signature\SignatureV4;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 use GuzzleHttp\Promise;
-use Aws;
+use RamseyAws;
 
 /**
  * Generates RDS auth tokens for use with IAM authentication.
@@ -26,7 +26,7 @@ class AuthTokenGenerator
     {
         if ($creds instanceof CredentialsInterface) {
             $promise = new Promise\FulfilledPromise($creds);
-            $this->credentialProvider = Aws\constantly($promise);
+            $this->credentialProvider = RamseyAws\constantly($promise);
         } else {
             $this->credentialProvider = $creds;
         }

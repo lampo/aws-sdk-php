@@ -16,17 +16,17 @@ The **AWS SDK for PHP** enables PHP developers to use
 `Amazon Web Services <http://aws.amazon.com/>`_ from their PHP code, and build
 robust applications and software using services like Amazon S3, Amazon
 DynamoDB, Amazon Glacier, etc. You can get started in minutes by installing the
-SDK through Composer — by requiring the ``aws/aws-sdk-php`` package — or by
+SDK through Composer — by requiring the ``lampo/aws-sdk-php`` package — or by
 downloading the standalone `aws.zip <http://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip>`_
 or `aws.phar <http://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar>`_ files.
 
 External links: `API Docs <http://docs.aws.amazon.com/aws-sdk-php/v3/api/>`_
-| `GitHub <https://github.com/aws/aws-sdk-php>`_
+| `GitHub <https://github.com/lampo/aws-sdk-php>`_
 | `Twitter <https://twitter.com/awsforphp>`_
-| `Gitter <https://gitter.im/aws/aws-sdk-php>`_
+| `Gitter <https://gitter.im/lampo/aws-sdk-php>`_
 | `Blog <http://blogs.aws.amazon.com/php>`_
 | `Forum <https://forums.aws.amazon.com/forum.jspa?forumID=80>`_
-| `Packagist <https://packagist.org/packages/aws/aws-sdk-php>`_
+| `Packagist <https://packagist.org/packages/lampo/aws-sdk-php>`_
 
 .. note::
 
@@ -84,7 +84,7 @@ Reference
 
 * :doc:`faq`
 * :doc:`glossary`
-* `Contributing to the SDK <https://github.com/aws/aws-sdk-php/blob/master/CONTRIBUTING.md>`_
+* `Contributing to the SDK <https://github.com/lampo/aws-sdk-php/blob/master/CONTRIBUTING.md>`_
 * `Guzzle Documentation <http://guzzlephp.org>`_
 
 

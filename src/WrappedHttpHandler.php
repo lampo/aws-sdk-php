@@ -1,7 +1,7 @@
 <?php
-namespace Aws;
+namespace RamseyAws;
 
-use Aws\Api\Parser\Exception\ParserException;
+use RamseyAws\Api\Parser\Exception\ParserException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\FulfilledPromise;
 use Psr\Http\Message\RequestInterface;
@@ -48,7 +48,7 @@ class WrappedHttpHandler
         callable $httpHandler,
         callable $parser,
         callable $errorParser,
-        $exceptionClass = 'Aws\Exception\AwsException',
+        $exceptionClass = 'RamseyAws\Exception\AwsException',
         $collectStats = false
     ) {
         $this->httpHandler = $httpHandler;
@@ -82,7 +82,7 @@ class WrappedHttpHandler
             };
         } elseif (isset($options['http_stats_receiver'])) {
             throw new \InvalidArgumentException('Providing a custom HTTP stats'
-                . ' receiver to Aws\WrappedHttpHandler is not supported.');
+                . ' receiver to RamseyAws\WrappedHttpHandler is not supported.');
         }
 
         return Promise\promise_for($fn($request, $options))

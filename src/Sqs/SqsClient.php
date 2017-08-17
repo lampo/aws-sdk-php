@@ -1,9 +1,9 @@
 <?php
-namespace Aws\Sqs;
+namespace RamseyAws\Sqs;
 
-use Aws\AwsClient;
-use Aws\CommandInterface;
-use Aws\Sqs\Exception\SqsException;
+use RamseyAws\AwsClient;
+use RamseyAws\CommandInterface;
+use RamseyAws\Sqs\Exception\SqsException;
 use GuzzleHttp\Psr7\Uri;
 use GuzzleHttp\Psr7\UriResolver;
 use Psr\Http\Message\RequestInterface;
@@ -11,39 +11,39 @@ use Psr\Http\Message\RequestInterface;
 /**
  * Client used to interact Amazon Simple Queue Service (Amazon SQS)
  *
- * @method \Aws\Result addPermission(array $args = [])
+ * @method \RamseyAws\Result addPermission(array $args = [])
  * @method \GuzzleHttp\Promise\Promise addPermissionAsync(array $args = [])
- * @method \Aws\Result changeMessageVisibility(array $args = [])
+ * @method \RamseyAws\Result changeMessageVisibility(array $args = [])
  * @method \GuzzleHttp\Promise\Promise changeMessageVisibilityAsync(array $args = [])
- * @method \Aws\Result changeMessageVisibilityBatch(array $args = [])
+ * @method \RamseyAws\Result changeMessageVisibilityBatch(array $args = [])
  * @method \GuzzleHttp\Promise\Promise changeMessageVisibilityBatchAsync(array $args = [])
- * @method \Aws\Result createQueue(array $args = [])
+ * @method \RamseyAws\Result createQueue(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createQueueAsync(array $args = [])
- * @method \Aws\Result deleteMessage(array $args = [])
+ * @method \RamseyAws\Result deleteMessage(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteMessageAsync(array $args = [])
- * @method \Aws\Result deleteMessageBatch(array $args = [])
+ * @method \RamseyAws\Result deleteMessageBatch(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteMessageBatchAsync(array $args = [])
- * @method \Aws\Result deleteQueue(array $args = [])
+ * @method \RamseyAws\Result deleteQueue(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteQueueAsync(array $args = [])
- * @method \Aws\Result getQueueAttributes(array $args = [])
+ * @method \RamseyAws\Result getQueueAttributes(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getQueueAttributesAsync(array $args = [])
- * @method \Aws\Result getQueueUrl(array $args = [])
+ * @method \RamseyAws\Result getQueueUrl(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getQueueUrlAsync(array $args = [])
- * @method \Aws\Result listDeadLetterSourceQueues(array $args = [])
+ * @method \RamseyAws\Result listDeadLetterSourceQueues(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listDeadLetterSourceQueuesAsync(array $args = [])
- * @method \Aws\Result listQueues(array $args = [])
+ * @method \RamseyAws\Result listQueues(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listQueuesAsync(array $args = [])
- * @method \Aws\Result purgeQueue(array $args = [])
+ * @method \RamseyAws\Result purgeQueue(array $args = [])
  * @method \GuzzleHttp\Promise\Promise purgeQueueAsync(array $args = [])
- * @method \Aws\Result receiveMessage(array $args = [])
+ * @method \RamseyAws\Result receiveMessage(array $args = [])
  * @method \GuzzleHttp\Promise\Promise receiveMessageAsync(array $args = [])
- * @method \Aws\Result removePermission(array $args = [])
+ * @method \RamseyAws\Result removePermission(array $args = [])
  * @method \GuzzleHttp\Promise\Promise removePermissionAsync(array $args = [])
- * @method \Aws\Result sendMessage(array $args = [])
+ * @method \RamseyAws\Result sendMessage(array $args = [])
  * @method \GuzzleHttp\Promise\Promise sendMessageAsync(array $args = [])
- * @method \Aws\Result sendMessageBatch(array $args = [])
+ * @method \RamseyAws\Result sendMessageBatch(array $args = [])
  * @method \GuzzleHttp\Promise\Promise sendMessageBatchAsync(array $args = [])
- * @method \Aws\Result setQueueAttributes(array $args = [])
+ * @method \RamseyAws\Result setQueueAttributes(array $args = [])
  * @method \GuzzleHttp\Promise\Promise setQueueAttributesAsync(array $args = [])
  */
 class SqsClient extends AwsClient

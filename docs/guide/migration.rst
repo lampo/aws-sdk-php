@@ -409,7 +409,7 @@ even been removed.
 
 * Removed:
     * DynamoDB ``Item``, ``Attribute``, and ``ItemIterator`` classes - These
-      were previously deprecated in `Version 2.7.0 <https://github.com/aws/aws-sdk-php/blob/v3/CHANGELOG.md#270---2014-10-08>`_.
+      were previously deprecated in `Version 2.7.0 <https://github.com/lampo/aws-sdk-php/blob/v3/CHANGELOG.md#270---2014-10-08>`_.
     * SNS Message Validator - This is now `a separate, light-weight project
       <https://github.com/aws/aws-php-sns-message-validator>`_ that does not
       require the SDK as a dependency. This project is, however, included in the

@@ -1,39 +1,39 @@
 <?php
-namespace Aws\CodeStar;
+namespace RamseyAws\CodeStar;
 
-use Aws\AwsClient;
+use RamseyAws\AwsClient;
 
 /**
  * This client is used to interact with the **AWS CodeStar** service.
- * @method \Aws\Result associateTeamMember(array $args = [])
+ * @method \RamseyAws\Result associateTeamMember(array $args = [])
  * @method \GuzzleHttp\Promise\Promise associateTeamMemberAsync(array $args = [])
- * @method \Aws\Result createProject(array $args = [])
+ * @method \RamseyAws\Result createProject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createProjectAsync(array $args = [])
- * @method \Aws\Result createUserProfile(array $args = [])
+ * @method \RamseyAws\Result createUserProfile(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createUserProfileAsync(array $args = [])
- * @method \Aws\Result deleteProject(array $args = [])
+ * @method \RamseyAws\Result deleteProject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteProjectAsync(array $args = [])
- * @method \Aws\Result deleteUserProfile(array $args = [])
+ * @method \RamseyAws\Result deleteUserProfile(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteUserProfileAsync(array $args = [])
- * @method \Aws\Result describeProject(array $args = [])
+ * @method \RamseyAws\Result describeProject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeProjectAsync(array $args = [])
- * @method \Aws\Result describeUserProfile(array $args = [])
+ * @method \RamseyAws\Result describeUserProfile(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeUserProfileAsync(array $args = [])
- * @method \Aws\Result disassociateTeamMember(array $args = [])
+ * @method \RamseyAws\Result disassociateTeamMember(array $args = [])
  * @method \GuzzleHttp\Promise\Promise disassociateTeamMemberAsync(array $args = [])
- * @method \Aws\Result listProjects(array $args = [])
+ * @method \RamseyAws\Result listProjects(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listProjectsAsync(array $args = [])
- * @method \Aws\Result listResources(array $args = [])
+ * @method \RamseyAws\Result listResources(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listResourcesAsync(array $args = [])
- * @method \Aws\Result listTeamMembers(array $args = [])
+ * @method \RamseyAws\Result listTeamMembers(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listTeamMembersAsync(array $args = [])
- * @method \Aws\Result listUserProfiles(array $args = [])
+ * @method \RamseyAws\Result listUserProfiles(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listUserProfilesAsync(array $args = [])
- * @method \Aws\Result updateProject(array $args = [])
+ * @method \RamseyAws\Result updateProject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateProjectAsync(array $args = [])
- * @method \Aws\Result updateTeamMember(array $args = [])
+ * @method \RamseyAws\Result updateTeamMember(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateTeamMemberAsync(array $args = [])
- * @method \Aws\Result updateUserProfile(array $args = [])
+ * @method \RamseyAws\Result updateUserProfile(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateUserProfileAsync(array $args = [])
  */
 class CodeStarClient extends AwsClient {}

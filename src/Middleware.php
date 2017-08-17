@@ -1,10 +1,10 @@
 <?php
-namespace Aws;
+namespace RamseyAws;
 
-use Aws\Api\Service;
-use Aws\Api\Validator;
-use Aws\Credentials\CredentialsInterface;
-use Aws\Exception\AwsException;
+use RamseyAws\Api\Service;
+use RamseyAws\Api\Validator;
+use RamseyAws\Credentials\CredentialsInterface;
+use RamseyAws\Exception\AwsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\LazyOpenStream;
@@ -318,8 +318,8 @@ final class Middleware
     /**
      * Creates a middleware that applies a map function to results.
      *
-     * @param callable $f Map function that accepts an Aws\ResultInterface and
-     *                    returns an Aws\ResultInterface.
+     * @param callable $f Map function that accepts an RamseyAws\ResultInterface and
+     *                    returns an RamseyAws\ResultInterface.
      *
      * @return callable
      */

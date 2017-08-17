@@ -1772,7 +1772,7 @@ Migration Service**.
 
 ## 2.8.0 - 2015-04-09
 
-See the [Upgrading Guide](https://github.com/aws/aws-sdk-php/blob/master/UPGRADING.md)
+See the [Upgrading Guide](https://github.com/lampo/aws-sdk-php/blob/master/UPGRADING.md)
 for details about any changes you may need to make to your code for this upgrade.
 
 * `Aws\MachineLearning` - Added support for the Amazon Machine Learning service.
@@ -2181,7 +2181,7 @@ for details about any changes you may need to make to your code for this upgrade
 * [BC] Updated the Amazon CloudSearch client to use the new 2013-01-01 API version (see [their release
   notes](http://aws.amazon.com/releasenotes/6125075708216342)). This API version of CloudSearch is significantly
   different than the previous one, and is not backwards compatible. See the
-  [Upgrading Guide](https://github.com/aws/aws-sdk-php/blob/master/UPGRADING.md) for more details.
+  [Upgrading Guide](https://github.com/lampo/aws-sdk-php/blob/master/UPGRADING.md) for more details.
 * Added support for the VPC peering features to the Amazon EC2 client.
 * Updated the Amazon EC2 client to use the new 2014-02-01 API version.
 * Added support for [resize progress data and the Cluster Revision Number
@@ -2274,7 +2274,7 @@ for details about any changes you may need to make to your code for this upgrade
   encourage you to update your code at this time.
 * Updated the Amazon CloudFront client to use the 2013-11-11 API version
 * [BC] Updated the Amazon EC2 client to use the latest API. This resulted in a small change to a parameter in the
-  `RequestSpotInstances` operation. See [this commit](https://github.com/aws/aws-sdk-php/commit/36ae0f68d2a6dcc3bc28222f60ecb318449c4092#diff-bad2f6eac12565bb684f2015364c22bd)
+  `RequestSpotInstances` operation. See [this commit](https://github.com/lampo/aws-sdk-php/commit/36ae0f68d2a6dcc3bc28222f60ecb318449c4092#diff-bad2f6eac12565bb684f2015364c22bd)
   for the change
 * [BC] Removed Signature V3 support (no longer needed) and refactored parts of the signature-related classes
 
@@ -2435,7 +2435,7 @@ for details about any changes you may need to make to your code for this upgrade
 * [BC] Updated the Amazon CloudFront client to use the new 2013-05-12 API version which includes changes in how you
   configure distributions. If you are not ready to upgrade to the new API, you can configure the SDK to use the previous
   version of the API by setting the `version` option to `2012-05-05` when you instantiate the client (See
-  [`UPGRADING.md`](https://github.com/aws/aws-sdk-php/blob/master/UPGRADING.md))
+  [`UPGRADING.md`](https://github.com/lampo/aws-sdk-php/blob/master/UPGRADING.md))
 * Added abstractions for uploading a local directory to an Amazon S3 bucket (`$s3->uploadDirectory()`)
 * Added abstractions for downloading an Amazon S3 bucket to local directory (`$s3->downloadBucket()`)
 * Added an easy to way to delete objects from an Amazon S3 bucket that match a regular expression or key prefix
@@ -2512,7 +2512,7 @@ for details about any changes you may need to make to your code for this upgrade
 * [BC] Updated the Amazon DynamoDB client to use the new 2012-08-10 API version which includes changes in how you
   specify keys. If you are not ready to upgrade to the new API, you can configure the SDK to use the previous version of
   the API by setting the `version` option to `2011-12-05` when you instantiate the client (See
-  [`UPGRADING.md`](https://github.com/aws/aws-sdk-php/blob/master/UPGRADING.md)).
+  [`UPGRADING.md`](https://github.com/lampo/aws-sdk-php/blob/master/UPGRADING.md)).
 * Added an Amazon S3 stream wrapper that allows PHP native file functions to be used to interact with S3 buckets and
   objects
 * Added support for automatically retrying *throttled* requests with exponential backoff to all service clients

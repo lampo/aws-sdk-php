@@ -1,11 +1,11 @@
 <?php
-namespace Aws\MarketplaceEntitlementService;
+namespace RamseyAws\MarketplaceEntitlementService;
 
-use Aws\AwsClient;
+use RamseyAws\AwsClient;
 
 /**
  * This client is used to interact with the **AWS Marketplace Entitlement Service** service.
- * @method \Aws\Result getEntitlements(array $args = [])
+ * @method \RamseyAws\Result getEntitlements(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getEntitlementsAsync(array $args = [])
  */
 class MarketplaceEntitlementServiceClient extends AwsClient {}

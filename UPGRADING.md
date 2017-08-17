@@ -59,7 +59,7 @@ Upgrade from 2.6 to 2.7
 
 Version 2.7 is backward-compatible with version 2.6. The version bump was
 necessary in order to mark some things in the DynamoDb namespace as deprecated.
-See the [CHANGELOG entry for 2.7.0](https://github.com/aws/aws-sdk-php/blob/v3/CHANGELOG.md#270-2014-10-08)
+See the [CHANGELOG entry for 2.7.0](https://github.com/lampo/aws-sdk-php/blob/v3/CHANGELOG.md#270-2014-10-08)
 for more details.
 
 Upgrade from 2.5 to 2.6
@@ -102,7 +102,7 @@ Upgrade from 2.4 to 2.5
 
 A small, backwards-incompatible change has been made to the Amazon EC2 API. The `LaunchConfiguration.MonitoringEnabled`
 parameter of the `RequestSpotInstances` operation has been change to `LaunchConfiguration.Monitoring.Enabled` See [this
-commit](https://github.com/aws/aws-sdk-php/commit/36ae0f68d2a6dcc3bc28222f60ecb318449c4092#diff-bad2f6eac12565bb684f2015364c22bd)
+commit](https://github.com/lampo/aws-sdk-php/commit/36ae0f68d2a6dcc3bc28222f60ecb318449c4092#diff-bad2f6eac12565bb684f2015364c22bd)
 for the exact change. You are only affected by this change if you are using this specific parameter. To fix your code to
 work with the updated parameter, you will need to change the structure of your request slightly.
 

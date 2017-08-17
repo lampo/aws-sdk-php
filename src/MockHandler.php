@@ -1,14 +1,14 @@
 <?php
-namespace Aws;
+namespace RamseyAws;
 
-use Aws\Exception\AwsException;
+use RamseyAws\Exception\AwsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\RejectedPromise;
 use Psr\Http\Message\RequestInterface;
 
 /**
  * Returns promises that are rejected or fulfilled using a queue of
- * Aws\ResultInterface and Aws\Exception\AwsException objects.
+ * RamseyAws\ResultInterface and RamseyAws\Exception\AwsException objects.
  */
 class MockHandler implements \Countable
 {
@@ -19,7 +19,7 @@ class MockHandler implements \Countable
     private $onRejected;
 
     /**
-     * The passed in value must be an array of {@see Aws\ResultInterface} or
+     * The passed in value must be an array of {@see RamseyAws\ResultInterface} or
      * {@see AwsException} objects that acts as a queue of results or
      * exceptions to return each time the handler is invoked.
      *
@@ -53,7 +53,7 @@ class MockHandler implements \Countable
             ) {
                 $this->queue[] = $value;
             } else {
-                throw new \InvalidArgumentException('Expected an Aws\ResultInterface or Aws\Exception\AwsException.');
+                throw new \InvalidArgumentException('Expected an RamseyAws\ResultInterface or RamseyAws\Exception\AwsException.');
             }
         }
     }

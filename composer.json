@@ -1,5 +1,5 @@
 {
-    "name": "aws/aws-sdk-php",
+    "name": "lampo/aws-sdk-php",
     "homepage": "http://aws.amazon.com/sdkforphp",
     "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
     "keywords": ["aws","amazon","sdk","s3","ec2","dynamodb","cloud","glacier"],
@@ -13,7 +13,7 @@
     ],
     "support": {
         "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
-        "issues": "https://github.com/aws/aws-sdk-php/issues"
+        "issues": "https://github.com/lampo/aws-sdk-php/issues"
     },
     "require": {
         "php": ">=5.5",
@@ -45,19 +45,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Aws\\": "src/"
+            "RamseyAws\\": "src/"
         },
         "files": ["src/functions.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Aws\\Test\\": "tests/"
+            "RamseyAws\\Test\\": "tests/"
         },
         "classmap": ["build/"]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.0-dev"
-        }
     }
 }

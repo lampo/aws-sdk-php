@@ -24,7 +24,7 @@ into your project.
 
    ::
 
-       php composer.phar require aws/aws-sdk-php
+       php composer.phar require lampo/aws-sdk-php
 
 3. Require Composer's autoloader:
 

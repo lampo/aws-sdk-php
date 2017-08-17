@@ -1,53 +1,53 @@
 <?php
-namespace Aws\DynamoDb;
+namespace RamseyAws\DynamoDb;
 
-use Aws\Api\Parser\Crc32ValidatingParser;
-use Aws\AwsClient;
-use Aws\ClientResolver;
-use Aws\HandlerList;
-use Aws\Middleware;
-use Aws\RetryMiddleware;
+use RamseyAws\Api\Parser\Crc32ValidatingParser;
+use RamseyAws\AwsClient;
+use RamseyAws\ClientResolver;
+use RamseyAws\HandlerList;
+use RamseyAws\Middleware;
+use RamseyAws\RetryMiddleware;
 
 /**
  * This client is used to interact with the **Amazon DynamoDB** service.
  *
- * @method \Aws\Result batchGetItem(array $args = [])
+ * @method \RamseyAws\Result batchGetItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise batchGetItemAsync(array $args = [])
- * @method \Aws\Result batchWriteItem(array $args = [])
+ * @method \RamseyAws\Result batchWriteItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise batchWriteItemAsync(array $args = [])
- * @method \Aws\Result createTable(array $args = [])
+ * @method \RamseyAws\Result createTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createTableAsync(array $args = [])
- * @method \Aws\Result deleteItem(array $args = [])
+ * @method \RamseyAws\Result deleteItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteItemAsync(array $args = [])
- * @method \Aws\Result deleteTable(array $args = [])
+ * @method \RamseyAws\Result deleteTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteTableAsync(array $args = [])
- * @method \Aws\Result describeTable(array $args = [])
+ * @method \RamseyAws\Result describeTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeTableAsync(array $args = [])
- * @method \Aws\Result getItem(array $args = [])
+ * @method \RamseyAws\Result getItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getItemAsync(array $args = [])
- * @method \Aws\Result listTables(array $args = [])
+ * @method \RamseyAws\Result listTables(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listTablesAsync(array $args = [])
- * @method \Aws\Result putItem(array $args = [])
+ * @method \RamseyAws\Result putItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putItemAsync(array $args = [])
- * @method \Aws\Result query(array $args = [])
+ * @method \RamseyAws\Result query(array $args = [])
  * @method \GuzzleHttp\Promise\Promise queryAsync(array $args = [])
- * @method \Aws\Result scan(array $args = [])
+ * @method \RamseyAws\Result scan(array $args = [])
  * @method \GuzzleHttp\Promise\Promise scanAsync(array $args = [])
- * @method \Aws\Result updateItem(array $args = [])
+ * @method \RamseyAws\Result updateItem(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateItemAsync(array $args = [])
- * @method \Aws\Result updateTable(array $args = [])
+ * @method \RamseyAws\Result updateTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateTableAsync(array $args = [])
- * @method \Aws\Result describeLimits(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result describeLimits(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise describeLimitsAsync(array $args = []) (supported in versions 2012-08-10)
- * @method \Aws\Result describeTimeToLive(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result describeTimeToLive(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise describeTimeToLiveAsync(array $args = []) (supported in versions 2012-08-10)
- * @method \Aws\Result listTagsOfResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result listTagsOfResource(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise listTagsOfResourceAsync(array $args = []) (supported in versions 2012-08-10)
- * @method \Aws\Result tagResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result tagResource(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise tagResourceAsync(array $args = []) (supported in versions 2012-08-10)
- * @method \Aws\Result untagResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result untagResource(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise untagResourceAsync(array $args = []) (supported in versions 2012-08-10)
- * @method \Aws\Result updateTimeToLive(array $args = []) (supported in versions 2012-08-10)
+ * @method \RamseyAws\Result updateTimeToLive(array $args = []) (supported in versions 2012-08-10)
  * @method \GuzzleHttp\Promise\Promise updateTimeToLiveAsync(array $args = []) (supported in versions 2012-08-10)
  */
 class DynamoDbClient extends AwsClient

@@ -1,11 +1,11 @@
 <?php
-namespace Aws\DynamoDb;
+namespace RamseyAws\DynamoDb;
 
-use Aws\AwsClientInterface;
-use Aws\CommandInterface;
-use Aws\CommandPool;
-use Aws\Exception\AwsException;
-use Aws\ResultInterface;
+use RamseyAws\AwsClientInterface;
+use RamseyAws\CommandInterface;
+use RamseyAws\CommandPool;
+use RamseyAws\Exception\AwsException;
+use RamseyAws\ResultInterface;
 
 /**
  * The WriteRequestBatch is an object that is capable of efficiently sending
@@ -47,10 +47,10 @@ class WriteRequestBatch
      *       in the queue. This defaults to true, so you must set this to false
      *       to stop autoflush.
      *     - before: (callable) Executed before every BatchWriteItem operation.
-     *       It should accept an \Aws\CommandInterface object as its argument.
+     *       It should accept an \RamseyAws\CommandInterface object as its argument.
      *     - error: Executed if an error was encountered executing a,
      *       BatchWriteItem operation, otherwise errors are ignored. It should
-     *       accept an \Aws\Exception\AwsException as its argument.
+     *       accept an \RamseyAws\Exception\AwsException as its argument.
      *
      * @throws \InvalidArgumentException if the batch size is not between 2 and 25.
      */

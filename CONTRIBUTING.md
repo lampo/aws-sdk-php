@@ -65,12 +65,12 @@ A changelog document's `category` field should correspond to a Service subfolder
 of the `src` directory. If your update is for core components of the SDK, the
 category field should exist with the value set to an empty string `""`.
 
-[issues]: https://github.com/aws/aws-sdk-php/issues
-[pull-requests]: https://github.com/aws/aws-sdk-php/pulls
+[issues]: https://github.com/lampo/aws-sdk-php/issues
+[pull-requests]: https://github.com/lampo/aws-sdk-php/pulls
 [license]: http://aws.amazon.com/apache2.0/
 [cla]: https://github.com/aws/aws-cla/blob/master/amazon-single-contribution-license.txt
 [php-fig]: http://php-fig.org
 [cs-fixer]: http://cs.sensiolabs.org/
 [sphinx]: http://sphinx-doc.org/
 [restructuredtext]: http://sphinx-doc.org/rest.html
-[docs-readme]: https://github.com/aws/aws-sdk-php/blob/master/docs/README.md
+[docs-readme]: https://github.com/lampo/aws-sdk-php/blob/master/docs/README.md

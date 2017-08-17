@@ -1,13 +1,13 @@
 <?php
-namespace Aws;
+namespace RamseyAws;
 
-use Aws\Api\Service;
+use RamseyAws\Api\Service;
 use GuzzleHttp\Promise\Promise;
 
 /**
  * A trait providing generic functionality for interacting with Amazon Web
  * Services. This is meant to be used in classes implementing
- * \Aws\AwsClientInterface
+ * \RamseyAws\AwsClientInterface
  */
 trait AwsClientTrait
 {

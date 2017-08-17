@@ -1,11 +1,11 @@
 <?php
-namespace Aws\S3\Exception;
+namespace RamseyAws\S3\Exception;
 
-use Aws\CommandInterface;
-use Aws\Exception\AwsException;
-use Aws\Multipart\UploadState;
+use RamseyAws\CommandInterface;
+use RamseyAws\Exception\AwsException;
+use RamseyAws\Multipart\UploadState;
 
-class S3MultipartUploadException extends \Aws\Exception\MultipartUploadException
+class S3MultipartUploadException extends \RamseyAws\Exception\MultipartUploadException
 {
     /** @var string Bucket of the transfer object */
     private $bucket;

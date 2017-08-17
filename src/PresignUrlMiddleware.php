@@ -1,10 +1,10 @@
 <?php
-namespace Aws;
+namespace RamseyAws;
 
-use Aws\AwsClientInterface;
-use Aws\Signature\SignatureV4;
-use Aws\Endpoint\EndpointProvider;
-use Aws\CommandInterface;
+use RamseyAws\AwsClientInterface;
+use RamseyAws\Signature\SignatureV4;
+use RamseyAws\Endpoint\EndpointProvider;
+use RamseyAws\CommandInterface;
 use GuzzleHttp\Psr7\Uri;
 use Psr\Http\Message\RequestInterface;
 
@@ -71,7 +71,7 @@ class PresignUrlMiddleware
         $newCmd->{'__skip' . $cmdName} = true;
 
         // Serialize a request for the operation.
-        $request = \Aws\serialize($newCmd);
+        $request = \RamseyAws\serialize($newCmd);
         // Create the new endpoint for the target endpoint.
         $endpoint = EndpointProvider::resolve($this->endpointProvider, [
             'region'  => $cmd['SourceRegion'],

@@ -1,7 +1,7 @@
 AWS SDK for PHP
 ===============
 
-Documentation for the [AWS SDK for PHP](https://github.com/aws/aws-sdk-php).
+Documentation for the [AWS SDK for PHP](https://github.com/lampo/aws-sdk-php).
 
 Building the documentation
 --------------------------

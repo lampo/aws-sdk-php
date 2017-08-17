@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Endpoint;
+namespace RamseyAws\Endpoint;
 
 class PartitionEndpointProvider
 {
@@ -51,7 +51,7 @@ class PartitionEndpointProvider
      * the provided name can be found.
      *
      * @param string $name
-     * 
+     *
      * @return Partition|null
      */
     public function getPartitionByName($name)
@@ -70,7 +70,7 @@ class PartitionEndpointProvider
      */
     public static function defaultProvider()
     {
-        $data = \Aws\load_compiled_json(__DIR__ . '/../data/endpoints.json');
+        $data = \RamseyAws\load_compiled_json(__DIR__ . '/../data/endpoints.json');
 
         return new self($data['partitions']);
     }

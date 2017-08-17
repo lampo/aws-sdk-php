@@ -1,9 +1,9 @@
 <?php
-namespace Aws\S3;
+namespace RamseyAws\S3;
 
-use Aws\Exception\MultipartUploadException;
-use Aws\Result;
-use Aws\S3\Exception\S3Exception;
+use RamseyAws\Exception\MultipartUploadException;
+use RamseyAws\Result;
+use RamseyAws\S3\Exception\S3Exception;
 use GuzzleHttp\Promise\PromisorInterface;
 use InvalidArgumentException;
 
@@ -133,7 +133,7 @@ class ObjectCopier implements PromisorInterface
     {
         if (empty($location['Bucket']) || empty($location['Key'])) {
             throw new \InvalidArgumentException('Locations provided to an'
-                . ' Aws\S3\ObjectCopier must have a non-empty Bucket and Key');
+                . ' RamseyAws\S3\ObjectCopier must have a non-empty Bucket and Key');
         }
     }
 
